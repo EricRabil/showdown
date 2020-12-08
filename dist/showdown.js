@@ -576,10 +576,6 @@ if (!showdown.hasOwnProperty('helper')) {
   showdown.helper = {};
 }
 
-if (typeof document === 'undefined' && typeof window === 'undefined') {
-  var jsdom = require('jsdom');
-  this.window = new jsdom.JSDOM('', {}).window; // jshint ignore:line
-}
 showdown.helper.document = this.window.document;
 
 /**

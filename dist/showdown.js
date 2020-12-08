@@ -1,4 +1,4 @@
-;/*! showdown v 2.0.0-alpha1 - 03-12-2020 */
+;/*! showdown v 2.0.0-alpha1 - 08-12-2020 */
 (function(){
 /**
  * Created by Tivie on 13-07-2015.
@@ -576,7 +576,7 @@ if (!showdown.hasOwnProperty('helper')) {
   showdown.helper = {};
 }
 
-if (typeof this.document === 'undefined' && typeof this.window === 'undefined') {
+if (typeof document === 'undefined' && typeof window === 'undefined') {
   var jsdom = require('jsdom');
   this.window = new jsdom.JSDOM('', {}).window; // jshint ignore:line
 }
